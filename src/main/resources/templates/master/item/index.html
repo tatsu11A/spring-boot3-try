@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja" xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>itm登録</title>
+</head>
+<body>
+	<h1>itemマスタ登録(入力)</h1>
+
+	<form th:action="@{/master/item/confirm}" method="post">
+		<div>
+			<label>商品名 : </label>
+			<input type ="text" name ="itemName">
+		</div>
+		
+		<div>
+			<label>価格 : </label>
+			<input type="number" name="price">
+		</div>
+		
+		<button type="submit">確認へ</button>
+	</form>
+	<a th:href="@{/}">メニューに戻る</a>
+</body>
+</html>
