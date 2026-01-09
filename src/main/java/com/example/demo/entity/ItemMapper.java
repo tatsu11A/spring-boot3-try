@@ -1,9 +1,9 @@
 package com.example.demo.entity;
 
-import java.utik.List;
+import java.util.List;
 
-import org.apache.ibatis.annotaitions.Mapper;
-import org.apache.ibatis.annotaitions.Select;
+import org.apache.ibatis.annotations.Mapper;
+import org.apache.ibatis.annotations.Select;
 
 import com.example.demo.entity.Item;
 

@@ -7,22 +7,15 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.demo.entity.Item;
-import com.example.demo.entity.ItemFindService;
 
 @Controller
 public class MenuController {
 
-    private final ItemFindService Service;
+    private final ItemFindService service;
 
-    public MenuController(ItemFindService Service){
+    public MenuController(ItemFindService service){
         this.service = service;
     }
-
-    @GetMapping
-    public String rooString(){
-        return "redirect:/menu";
-    }
-
     
     @GetMapping("/")
     public String menu(Model model){
