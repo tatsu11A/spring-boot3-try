@@ -8,14 +8,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 
 import com.example.demo.entity.Item;
 
+import lombok.RequiredArgsConstructor;
+
 @Controller
+@RequiredArgsConstructor
 public class MenuController {
-
+    
     private final ItemFindService service;
-
-    public MenuController(ItemFindService service){
-        this.service = service;
-    }
     
     @GetMapping("/")
     public String menu(Model model){
@@ -24,5 +23,3 @@ public class MenuController {
         return "menu";
     }
 }
-
-

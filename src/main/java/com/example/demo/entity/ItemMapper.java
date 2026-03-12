@@ -2,21 +2,16 @@ package com.example.demo.entity;
 
 import java.util.List;
 
+import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Select;
-
-import com.example.demo.entity.Item;
 
 @Mapper
 public interface ItemMapper {
     
-    @Select("""
-            select
-            id,
-            item_name,
-            price
-            from item
-            order by id
-            """)
-            List<Item>findAll();
+    @Select("select * from item")
+    List<Item> findAll();
+
+    @Insert("insert into item(id, item_name, price) values(#{id}, #{itemName}, #{price})")
+    void insert(Item item);
 }
