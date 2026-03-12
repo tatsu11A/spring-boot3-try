@@ -2,21 +2,19 @@
 <html lang="ja" xmlns:th="http://www.thymeleaf.org">
 <head>
 	<meta charset="UTF-8" />
-	<title>メニュー</title>
+	<title>メニュー画面</title>
 </head>
 <body>
 	<h1>メニュー画面</h1>
 	
-	<h2>Item一覧</h2>
 	<ul>
-		<li th:each="item : ${itemList}">
+		<li th:each="item:${itemList}">
 			<span th:text="${item.itemName}">ペン</span>
 			<span th:text="${item.price}">100</span>円
 		</li>
 	</ul>
 	
-	<a th:href="@{/master/item/index}">
-		itemマスタ登録へ
+	<a th:href="@{/master/item/index}" href="master/item/index.html">itemマスタ登録へ
 	</a>
 </body>
 </html>

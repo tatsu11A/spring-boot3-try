@@ -3,23 +3,36 @@
 <head>
 	<meta charset="UTF-8">
 	<title>itm登録</title>
+
+	<style>
+	label{
+    	display:inline-block;
+    	width:80px;
+	}
+	</style>
 </head>
 <body>
 	<h1>itemマスタ登録(入力)</h1>
 
 	<form th:action="@{/master/item/confirm}" method="post">
 		<div>
+			<label>ID : </label>
+			<input type ="text" name ="itemId">
+		</div>
+		
+		<div>
 			<label>商品名 : </label>
 			<input type ="text" name ="itemName">
 		</div>
 		
 		<div>
-			<label>価格 : </label>
-			<input type="number" name="price">
+			<label>価格  : </label>
+			<input type="text" name="price">円
 		</div>
 		
 		<button type="submit">確認へ</button>
 	</form>
-	<a th:href="@{/}">メニューに戻る</a>
+	<a th:href="@{/}"href="../../menu.html">メニューに戻る</a>
+
 </body>
 </html>
