@@ -9,7 +9,7 @@ import lombok.Data;
 @Data
 public class ItemForm {
 
-    private Integer id;
+    private Integer itemid;
     private String itemName;
     private Integer price;    
 

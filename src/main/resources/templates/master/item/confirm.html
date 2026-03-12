@@ -8,7 +8,7 @@
 	<h1>itemマスタ登録(確認)</h1>
 
 	<div>
-	<p>ID：<span th:text="${form.id}"></span></p>
+	<p>ID：<span th:text="${form.itemid}"></span></p>
 	</div>
 
 	<div>
@@ -19,13 +19,15 @@
 	<p>価格：<span th:text="${form.price}"></span>円</p>
 	</div>
 	
-	<form id="registForm" method="post" th:action="@{regist}" action="./complete.html">
-		<input type="hidden" th:field="*{id}" />
+	<form th:action="@{/master/item/regist}" th:object="${form}" method="post" >
+		<input type="hidden" th:field="*{itemid}" />
 		<input type="hidden" th:field="*{itemName}" />
 		<input type="hidden" th:field="*{price}" />
-<div>
-	<button type="submit" form="registForm">登録</button>
-</div>
+	</form>
+
+	<div>
+		<button type="submit" form="registForm">登録</button>
+		</div>
 
 <div>
 	<a th:href="@{/}" href="../../menu.html">メニューへ</a>

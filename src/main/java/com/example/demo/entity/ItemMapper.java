@@ -12,6 +12,6 @@ public interface ItemMapper {
     @Select("select * from item")
     List<Item> findAll();
 
-    @Insert("insert into item(id, item_name, price) values(#{id}, #{itemName}, #{price})")
+    @Insert("insert into item(item_id, item_name, price) values(#{itemid}, #{itemName}, #{price})")
     void insert(Item item);
 }

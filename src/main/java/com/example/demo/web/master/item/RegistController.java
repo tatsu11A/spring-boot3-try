@@ -41,17 +41,3 @@ public class RegistController {
         return "master/item/complete";
     }
 }
-
-@Data
-class ItemForm {
-
-    private Long id;
-    private String itemName;
-    private Integer price;
-
-    public Item toItem() {
-        Item item = new Item();
-        BeanUtils.copyProperties(this, item);
-        return item;
-    }
-}
