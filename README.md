@@ -3,4 +3,5 @@
 spring-bootでの簡単なアプリケーション開発
 
 **やっていること**
-![menu画面](docs/menu-screen.png)
+
+![menu画面](docs/menu.png)
