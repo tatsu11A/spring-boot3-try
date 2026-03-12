@@ -1,3 +1,3 @@
-insert into item (item_name, price) values ('ペン', 100);
-insert into item (item_name, price) values ('ノート', 200);
-insert into item (item_name, price) values ('消しゴム', 80);
+insert into item values(1, 'ペン', 100);
+insert into item values(2, 'ノート', 200);
+insert into item values(3, '消しゴム', 80);
