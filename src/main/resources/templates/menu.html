@@ -9,6 +9,7 @@
 	
 	<ul>
 		<li th:each="item:${itemList}">
+			<span th:text="${item.itemid}">1</span>
 			<span th:text="${item.itemName}">ペン</span>
 			<span th:text="${item.price}">100</span>円
 		</li>
