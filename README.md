@@ -59,7 +59,7 @@ C:.
 
 - 画面の遷移図
 
-![画面遷移](docs/mermaid-diagram.png)
+![画面遷移](docs/mermaid-diagram.png)　![処理フロー](docs/Image.png)
 
 **画面遷移の流れ**
 
