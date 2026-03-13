@@ -3,7 +3,61 @@
 spring-bootでの簡単なアプリケーション開発
 
 **やっていること**
--　画面の遷移図
+このアプリでは以下の機能を実装しています。
+
+- 商品一覧表示
+- 商品登録
+- 入力確認画面
+- 登録完了画面
+
+## ディレクトリ階層
+
+ディレクトリ階層
+```
+C:.
+│  .gitattributes
+│  .gitignore
+│  mvnw
+│  mvnw.cmd
+│  pom.xml
+│  README.md
+├─.mvn
+│  └─wrapper
+│          maven-wrapper.properties
+└─src
+    ├─main
+    │  ├─java
+    │  │  └─com
+    │  │      └─example
+    │  │          └─demo
+    │  │              │  DemoApplication.java
+    │  │              ├─entity
+    │  │              │      Item.java
+    │  │              │      ItemMapper.java
+    │  │              └─web
+    │  │                  ├─master
+    │  │                  │  └─item
+    │  │                  │          ItemForm.java
+    │  │                  │          ItemRegistService.java
+    │  │                  │          RegistController.java
+    │  │                  └─menu
+    │  │                          ItemFindService.java
+    │  │                          MenuController.java
+    │  └─resources
+    │      │  application.properties
+    │      │  data-all.sql
+    │      │  schema-all.sql
+    │      ├─static
+    │      └─templates
+    │          │  menu.html
+    │          └─master
+    │              └─item
+    │                      complete.html
+    │                      confirm.html
+    │                      index.html
+```
+
+- 画面の遷移図
 
 ![画面遷移](docs/mermaid-diagram.png)
 
