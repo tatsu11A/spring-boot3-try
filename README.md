@@ -107,7 +107,7 @@ C:.
 5. 登録完了画面表示
 
 処理の流れ
-* リダイレクトでmaster/item/completeにアクセスする
+* master/item/completeにアクセスする
 * RegistControllerのcompleteが呼ばれる
 * master/item/completeを返して完了画面を表示する
 
