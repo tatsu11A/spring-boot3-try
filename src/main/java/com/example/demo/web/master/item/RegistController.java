@@ -33,7 +33,7 @@ public class RegistController {
     public String regist(@ModelAttribute("form") ItemForm form) {
         Item item = form.toItem();
         itemRegistService.regist(item);
-        return "redirect:/master/item/complete";
+        return "/master/item/complete";
     }
 
     @GetMapping("/complete")

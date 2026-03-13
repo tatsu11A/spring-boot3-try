@@ -6,3 +6,8 @@ spring-bootでの簡単なアプリケーション開発
 -　画面の遷移図
 
 ![画面遷移](docs/mermaid-diagram.png)
+
+**画面遷移の流れ**
+ブラウザ
+↓
+
